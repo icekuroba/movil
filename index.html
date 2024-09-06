@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stéphanie Colette Thébault</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<!-- Botón de menú para móviles -->
+<div class="menu-trigger" onclick="toggleSidebar()">☰</div>
+
+<header class="header-area header-sticky">
+    <div class="container">
+        <nav class="main-nav">
+            <ul class="nav" id="topMenu">
+                <li><a href="#top" class="active" onclick="closeSidebar()">Inicio</a></li>
+                <li><a href="#about" onclick="closeSidebar()">Bio</a></li>
+                <li><a href="#group-members" onclick="closeSidebar()">Miembros del Lab</a></li>
+                <li><a href="#publications" onclick="closeSidebar()">Destacados</a></li>
+                <li><a href="#contact" onclick="closeSidebar()">Contacto</a></li>
+                <li class="language-switcher">
+                    <a href="index_es.html" class="active">ESP</a> | 
+                    <a href="index.html">ENG</a>
+                </li>
+                <li class="logos">
+                    <img src="assets/images/INB.png" alt="UNAM">
+                    <img src="assets/images/imagen.jpg" alt="INB">
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Menú lateral para móviles -->
+<div class="sidebar sticky-sidebar" id="sidebar">
+    <div class="widget">
+        <h4 class="widget-title">Buscar en el Lab</h4>
+        <form action="#">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fa fa-search"></i> Buscar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script>
+    function toggleSidebar() {
+        document.querySelector('.sidebar').classList.toggle('open');
+        document.body.classList.toggle('sidebar-open');
+    }
+
+    function closeSidebar() {
+        document.querySelector('.sidebar').classList.remove('open');
+        document.body.classList.remove('sidebar-open');
+    }
+</script>
+</body>
+</html>

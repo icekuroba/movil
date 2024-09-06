@@ -1,0 +1,103 @@
+
+/* Estilos generales */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, section {
+  display: block;
+}
+
+/* Margins and spacing */
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Mejora en la distribución del texto en móviles */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Ajustes en el contacto */
+.contact-info {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+}
+
+/* Ajustes en móviles */
+@media (max-width: 768px) {
+  /* Mejora de la lectura y espacio */
+  section {
+    padding: 15px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0 15px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .contact-info {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Logos */
+.logos {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.logo {
+  height: 50px;
+  margin: 0 10px;
+}
+.language-switcher {
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Para mostrar el botón de cambio de idioma en móviles */
+@media (max-width: 768px) {
+  .language-switcher {
+      display: block;
+      width: 100%;
+      background-color: #f8f8f8;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      text-align: center;
+  }
+
+  .language-switcher a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 18px;
+      color: #333;
+  }
+}
