@@ -168,113 +168,106 @@ section {
 /* -------------------------------------------------------------------------------------- */
 /*                              Sección "About" (versión PC y Móvil)                       */
 /* -------------------------------------------------------------------------------------- */
+/* Estilo general para todas las pantallas */
 #about {
   margin-top: 20px;
   padding: 100px 0px 0px 0px;
   position: relative;
   z-index: 9;
-}
-#about {
-  margin: 0 auto; /* Centra la sección en la página */
-  padding: 100px 0; /* Ajusta el padding para el contenido */
-  width: 60%; /* Ajusta el ancho según sea necesario */
-  max-width: 1400px; 
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 60%;
+  max-width: 1400px;
   text-align: center;
 }
-@media (max-width: 768px) {
-  #about {
-    padding: 30px 10px; /* Reduce el padding superior e inferior */
-    width: 90%; /* Aumenta el ancho para utilizar más espacio horizontal */
-    text-align: left; /* Alinea el texto a la izquierda para mejorar la legibilidad en pantallas pequeñas */
-  }
-}
-#about .section-heading h2 {
-  padding-right: 100px;
-}
+
 #about .img-circle1 {
   width: 100%;
   max-width: 200px; /* Limitar el ancho máximo de la imagen */
   height: auto; /* Mantener la proporción de la imagen */
   border-radius: 50%;
-  margin: 0 auto; /* Centrar la imagen */
+  margin: 0 auto;
 }
-#about .right-content {
-  margin-top: 20px;
-}
+
 #about .right-content h3 {
   font-size: 24px;
-  color: #029b75e5;  
+  color: #029b75e5;
 }
+
 #about .right-content p {
   font-size: 16px;
   color: #000;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-#about .right-content .thumb a {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 50px; /* Mantén un ancho y alto iguales para la circularidad */
-  height: 50px;
-  display: inline-block;
-  line-height: 50px; /* Alineación vertical centrada */
-  text-align: center;
-  background-color: #7CC14A;
-  color: #fff;
-  border-radius: 50%; /* Hace que el enlace sea circular */
-  transform: translate(-50%, -50%); /* Centra el enlace en el contenedor */
-}
-/*                           Eduaction and interests                     */
-.education-section,
-.interests-section {
+
+/* Educación e intereses */
+.education-section, .interests-section {
   margin-top: 30px;
-  color: #029b75e5; /* Ajusta según el fondo */
+  color: #029b75e5;
 }
-.education-section h6,
-.interests-section h6 {
+
+.education-section h6, .interests-section h6 {
   font-size: 18px;
   font-weight: bold;
-  color: #029b75e5; /* Verde agua para el título */
+  color: #029b75e5;
   margin-bottom: 15px;
 }
-.education-section ul,
-.interests-section ul {
+
+.education-section ul, .interests-section ul {
   list-style-type: none;
   padding: 0;
 }
-.education-section ul li,
-.interests-section ul li {
+
+.education-section ul li, .interests-section ul li {
   margin-bottom: 10px;
   font-size: 14px;
-  color: #171717; /* Ajusta según el fondo */
+  color: #171717;
 }
+
 .education-section ul li strong {
-  color: #7CC14A; /* Color para el título de cada educación */
-  font-weight: bold; /* Asegura que los títulos estén en negrita */
+  color: #7CC14A;
+  font-weight: bold;
 }
+
+/* Estilos para móviles (pantallas menores a 768px) */
 @media (max-width: 768px) {
   #about {
-    padding: 30px 10px; /* Reduce el padding superior e inferior */
-    width: 90%; /* Aumenta el ancho para utilizar más espacio horizontal */
-    text-align: left; /* Alinea el texto a la izquierda para mejorar la legibilidad en pantallas pequeñas */
+    padding: 30px 10px;
+    width: 90%;
+    text-align: left;
   }
+
   #about .section-heading h2 {
-    padding-right: 0; /* Elimina el padding en pantallas pequeñas */
+    padding-right: 0;
   }
+
   #about .right-content h3 {
-    font-size: 20px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+    font-size: 20px;
   }
+
   #about .right-content p {
-    font-size: 14px; /* Reduce el tamaño de la fuente para mejorar la legibilidad */
+    font-size: 14px;
   }
+
   #about .img-circle1 {
-    max-width: 150px; /* Ajusta el tamaño máximo de la imagen para pantallas pequeñas */
+    max-width: 150px; /* Ajuste de tamaño de la imagen en móviles */
   }
-  .education-section ul li,
-  .interests-section ul li {
-    font-size: 12px; /* Reduce el tamaño de la fuente en listas */
-  }}
+
+  .education-section ul li, .interests-section ul li {
+    font-size: 12px;
+  }
+
+  /* Reordenar secciones en móviles: poner "About" antes de "Education" */
+  .education-section {
+    order: 2; /* Sección de educación se muestra después en móviles */
+  }
+
+  #about {
+    order: 1; /* Sección About se muestra primero */
+  }
+}
+
 /* -------------------------------------------------------------------------------------- */
 /*                           Sección "Lab Members" (versión PC)                            */
 /* -------------------------------------------------------------------------------------- */
