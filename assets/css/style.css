@@ -474,14 +474,14 @@ section {
     font-size: 16px; /* Ajuste de tamaño de fuente para títulos en móvil */
   }
   .contact-image1{
-    max-width: 65%;
+    max-width: 45%;
   }
   p {
     font-size: 12px; /* Ajuste del tamaño de texto de los párrafos */
     line-height: 1; /* Mejora la legibilidad */
   }
  .contact-image {
-    max-width: 90%; /* Ajusta el ancho de las imágenes para pantallas pequeñas */
+    max-width: 80%; /* Ajusta el ancho de las imágenes para pantallas pequeñas */
   }}
 /* ---------------------------------------------------------------------------------------- */
 /*                               Barra Lateral Fija (versión PC)                           */
