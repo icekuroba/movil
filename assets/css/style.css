@@ -203,8 +203,7 @@ section {
 }
 #about .right-content h3 {
   font-size: 24px;
-  color: #029b75e5;
-  
+  color: #029b75e5;  
 }
 #about .right-content p {
   font-size: 16px;
@@ -254,6 +253,28 @@ section {
   color: #7CC14A; /* Color para el título de cada educación */
   font-weight: bold; /* Asegura que los títulos estén en negrita */
 }
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 10px; /* Reduce el padding superior e inferior */
+    width: 90%; /* Aumenta el ancho para utilizar más espacio horizontal */
+    text-align: left; /* Alinea el texto a la izquierda para mejorar la legibilidad en pantallas pequeñas */
+  }
+  #about .section-heading h2 {
+    padding-right: 0; /* Elimina el padding en pantallas pequeñas */
+  }
+  #about .right-content h3 {
+    font-size: 20px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+  }
+  #about .right-content p {
+    font-size: 14px; /* Reduce el tamaño de la fuente para mejorar la legibilidad */
+  }
+  #about .img-circle1 {
+    max-width: 150px; /* Ajusta el tamaño máximo de la imagen para pantallas pequeñas */
+  }
+  .education-section ul li,
+  .interests-section ul li {
+    font-size: 12px; /* Reduce el tamaño de la fuente en listas */
+  }}
 /* -------------------------------------------------------------------------------------- */
 /*                           Sección "Lab Members" (versión PC)                            */
 /* -------------------------------------------------------------------------------------- */
