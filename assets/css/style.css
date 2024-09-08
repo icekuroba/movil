@@ -419,6 +419,10 @@ section {
     width: 100%; /* Ocupar todo el ancho disponible */
     margin: 0 auto; /* Centra la sección en la pantalla */
     text-align: justify; /* Justifica el texto para que se vea más limpio */
+      }
+  .video-container iframe {
+    width: 100%; /* Asegura que el video se ajuste al 100% del contenedor */
+    height: 250px; /* Permite que el alto del video sea automático en pantallas pequeñas */
   }}
 /* -------------------------------------------------------------------------------------- */
 /*                     Sección "Contacts" (versión PC y Móvil)                             */
