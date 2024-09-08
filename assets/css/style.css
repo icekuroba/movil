@@ -467,7 +467,7 @@ section {
 }
 @media (max-width: 768px) {
   #contact {
-    max-width: 90%; /* Se reduce el ancho en pantallas pequeñas */
+    max-width: 100%; /* Se reduce el ancho en pantallas pequeñas */
     padding: 40px 15px; /* Menor padding en pantallas pequeñas */
   }
   h5 {
