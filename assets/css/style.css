@@ -425,18 +425,17 @@ section {
 /*                     Sección "Contacts" (versión PC y Móvil)                             */
 /* -------------------------------------------------------------------------------------- */
 #contact {
-  margin: 0 auto; /* Centra la sección en la página */
-  padding: 60px 30px; /* Ajusta el padding */
+  margin: 0 auto;
+  padding: 60px 10px;
   background-color: #fff;
   border-radius: 5px;
-  max-width: 100%; /* Ajusta el ancho según sea necesario */
-  margin-left: 20%;
+  max-width: 80%; /* Ancho adecuado en pantallas grandes */
 }
 .contact-image1 {
-  display: block; /* Asegura que cada imagen esté en una línea separada */
-  margin: 10px 0; /* Añade espacio vertical entre las imágenes */
-  max-width: 25%; /* Escala la imagen para ajustarse al contenedor si es necesario */
-  height: auto; /* Mantiene las proporciones originales de la imagen */
+  display: block;
+  margin-right: 20px; /* Esto añade 20px de espacio a la derecha de la imagen */
+  max-width: 25%; 
+  height: auto;
 }
 .contact-image {
   display: block; /* Asegura que cada imagen esté en una línea separada */
@@ -456,11 +455,34 @@ section {
 }
 .icon-container {
   width: 30px;
-  margin-right: 10px;
+  display: inline-block;
+  font-size: 24px; /* Ajusta el tamaño del ícono */
+  margin-right: 20px; /* Aumenta el margen entre los íconos */
+  position: relative;
+  margin-bottom: 0px;
+  top: -10px; /* Subir el ícono 10px */
 }
 .contact-text {
   font-size: 16px;
 }
+@media (max-width: 768px) {
+  #contact {
+    max-width: 90%; /* Se reduce el ancho en pantallas pequeñas */
+    padding: 40px 15px; /* Menor padding en pantallas pequeñas */
+  }
+  h5 {
+    font-size: 16px; /* Ajuste de tamaño de fuente para títulos en móvil */
+  }
+  .contact-image1{
+    max-width: 65%;
+  }
+  p {
+    font-size: 12px; /* Ajuste del tamaño de texto de los párrafos */
+    line-height: 1; /* Mejora la legibilidad */
+  }
+ .contact-image {
+    max-width: 90%; /* Ajusta el ancho de las imágenes para pantallas pequeñas */
+  }}
 /* ---------------------------------------------------------------------------------------- */
 /*                               Barra Lateral Fija (versión PC)                           */
 /* -------------------------------------------------------------------------------------- */
