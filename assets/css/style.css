@@ -400,26 +400,23 @@ section {
 /*                       Sección "Video Abstracts" (versión PC)                            */
 /* -------------------------------------------------------------------------------------- */
 #abstracts {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
-  width: 70%; 
-  margin-left: 10%;
-  text-align: center;
-}
-#vacancies h6 {
+  width: 80%; 
+  margin-left: 15%;
   text-align: center;
 }
 .video-container iframe {
   width: 80%;
-  height: 450px;
+  height: 400px;
 }
 @media (max-width: 768px) {
-  #vacancies {
+  #abstracts {
     padding: 15px 5%; /* Reduce el padding y usa porcentaje para centrar y expandir el contenido */
     width: 100%; /* Ocupar todo el ancho disponible */
     margin: 0 auto; /* Centra la sección en la pantalla */
     text-align: justify; /* Justifica el texto para que se vea más limpio */
-      }
+  }
   .video-container iframe {
     width: 100%; /* Asegura que el video se ajuste al 100% del contenedor */
     height: 250px; /* Permite que el alto del video sea automático en pantallas pequeñas */
