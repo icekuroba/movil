@@ -34,7 +34,7 @@ a:hover {
 }
 p, li {
   text-align: justify;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 25px;
   color: #2a2a2a;
 }
@@ -59,8 +59,7 @@ section {
   }
   h1, h2, h3 {
     font-size: 18px;
-  }
-}
+  }}
 .section-heading h6 {
   font-size: 16px; /* Tamaño de fuente del subtítulo */
   color: #7CC14A; /* Verde más claro para subtítulos */
@@ -136,8 +135,7 @@ section {
   }
   .logos img {
     height: 40px;
-  }
-}
+  }}
 /* -------------------------------------------------------------------------------------- */
 /*                            Seección Home (versión PC y Móvil)                          */
 /* -------------------------------------------------------------------------------------- */
@@ -157,117 +155,104 @@ section {
 @media (min-width: 769px) {
   .mobile-home {
     display: none;
-  }
-}
+  }}
 @media (max-width: 768px) {
   .home-content {
     max-width: 100%; /* Ocupa el 100% del ancho disponible en pantallas pequeñas */
     padding: 10px; /* Reducimos el padding para pantallas pequeñas */
-  }
-}
+  }}
 /* -------------------------------------------------------------------------------------- */
-/*                              Sección "About" (versión PC y Móvil)                       */
+/*                              Sección "About" (versión PC)                               */
 /* -------------------------------------------------------------------------------------- */
-/* Estilo general para todas las pantallas */
 #about {
-  margin-top: 20px;
-  padding: 100px 0px 0px 0px;
-  position: relative;
-  z-index: 9;
+  padding: 80px 30px;  /* Ajustar el padding para que no sea tan grande */
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 100px 0;
-  width: 60%;
-  max-width: 1400px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-
 #about .img-circle1 {
   width: 100%;
   max-width: 200px; /* Limitar el ancho máximo de la imagen */
   height: auto; /* Mantener la proporción de la imagen */
   border-radius: 50%;
-  margin: 0 auto;
+  margin-bottom:15px;
 }
-
-#about .right-content h3 {
-  font-size: 24px;
-  color: #029b75e5;
-}
-
 #about .right-content p {
   font-size: 16px;
   color: #000;
   margin-top: 10px;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
-
 /* Educación e intereses */
-.education-section, .interests-section {
-  margin-top: 30px;
-  color: #029b75e5;
-}
-
 .education-section h6, .interests-section h6 {
   font-size: 18px;
   font-weight: bold;
   color: #029b75e5;
   margin-bottom: 15px;
 }
-
 .education-section ul, .interests-section ul {
-  list-style-type: none;
+  list-style-type: none;   /* Eliminar viñetas */
+  margin: 0;               /* Eliminar márgenes predeterminados */
   padding: 0;
+  text-align: justify;
+  padding-left: 20px;      /* Añadir relleno a la izquierda para mover más a la izquierda */
 }
-
 .education-section ul li, .interests-section ul li {
   margin-bottom: 10px;
-  font-size: 14px;
-  color: #171717;
+  line-height: 1.4;        /* Mejora la legibilidad con una mayor altura de línea */
+  font-size: 14px;         /* Tamaño de la fuente */
+  color: #171717;          /* Color del texto */
+  text-align: left;        /* Asegurar alineación del texto a la izquierda */
 }
-
-.education-section ul li strong {
-  color: #7CC14A;
-  font-weight: bold;
-}
-
-/* Estilos para móviles (pantallas menores a 768px) */
+/* -------------------------------------------------------------------------------------- */
+/*                              Sección "About" (versión Móvil)                           */
+/* -------------------------------------------------------------------------------------- */
 @media (max-width: 768px) {
-  #about {
-    padding: 30px 10px;
-    width: 90%;
-    text-align: left;
+  /* Cambiar la disposición a columna */
+  .row {
+    flex-direction: column; /* Ordenar verticalmente */
   }
 
-  #about .section-heading h2 {
-    padding-right: 0;
+  /* Ordenar los elementos para que la foto y los iconos aparezcan primero */
+  .left-content {
+    order: 1;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  #about .right-content h3 {
-    font-size: 20px;
+  /* Foto de perfil primero */
+  .img-circle1 {
+    max-width: 150px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
   }
 
-  #about .right-content p {
-    font-size: 14px;
+  /* Iconos sociales después de la foto */
+  .social-icons {
+    order: 2;
+    margin-top: 10px;
+    text-align: center;
   }
 
-  #about .img-circle1 {
-    max-width: 150px; /* Ajuste de tamaño de la imagen en móviles */
+  /* Texto "About" después de los iconos sociales */
+  .right-content {
+    order: 3;
+    margin-top: 20px;
+    text-align: center;
   }
 
-  .education-section ul li, .interests-section ul li {
-    font-size: 12px;
-  }
-
-  /* Reordenar secciones en móviles: poner "About" antes de "Education" */
+  /* Educación debe aparecer al final en móviles */
   .education-section {
-    order: 2; /* Sección de educación se muestra después en móviles */
-  }
-
-  #about {
-    order: 1; /* Sección About se muestra primero */
+    order: 4;
+    width: 100%;
+    margin-top: 20px;
+    text-align: justify;
   }
 }
-
 /* -------------------------------------------------------------------------------------- */
 /*                           Sección "Lab Members" (versión PC)                            */
 /* -------------------------------------------------------------------------------------- */
@@ -279,6 +264,7 @@ section {
   text-align: center;
 }
 #group-members {
+  font-size: 16px;
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
@@ -306,8 +292,7 @@ section {
     padding: 30px 10px; /* Reduce el padding superior e inferior */
     width: 90%; /* Aumenta el ancho para utilizar más espacio horizontal */
     text-align: left; /* Alinea el texto a la izquierda para mejorar la legibilidad en pantallas pequeñas */
-  }
-}
+  }}
 @media (max-width: 768px) {
   .member {
     flex-direction: column;
@@ -317,8 +302,7 @@ section {
   .member-photo {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-}
+  }}
 /* -------------------------------------------------------------------------------------- */
 /*                          Sección "Publications" (versión PC y Movil)                            */
 /* -------------------------------------------------------------------------------------- */
@@ -356,20 +340,19 @@ section {
   }
   .publication-list h3 {
     font-size: 16px; /* Reduce ligeramente el tamaño de los títulos */
-    line-height: 1.4; /* Mejora la separación entre líneas */
+    line-height: 1.3; /* Mejora la separación entre líneas */
     margin-bottom: 10px; /* Reduce el espacio entre el título y el contenido */
   }
   .publication-list {
     padding: 0; /* Elimina cualquier padding adicional */
     width: 100%; /* Asegura que la lista de publicaciones ocupe todo el ancho */
-  }
-}
+  }}
 /* -------------------------------------------------------------------------------------- */
 /*                          Sección "Join Us" (versión PC y Móvil)                         */
 /* -------------------------------------------------------------------------------------- */
 #vacancies {
+  padding: 100px 0 50px 0;
   margin: 0 auto; /* Centra la sección en la página */
-  padding: 80px 0; /* Ajusta el padding para el contenido */
   width: 50%; 
   max-width: 1000px; 
   text-align: center;
@@ -396,24 +379,20 @@ section {
   #vacancies {
     padding: 15px 5%; /* Reduce el padding y usa porcentaje para centrar y expandir el contenido */
     width: 100%; /* Ocupar todo el ancho disponible */
+    line-height: 1;
     margin: 0 auto; /* Centra la sección en la pantalla */
-  }
-  #vacancies p {
-    font-size: 14px; /* Ajusta el tamaño del párrafo en pantallas pequeñas */
-    line-height: 1.5; /* Mejora la legibilidad en pantallas pequeñas */ 
   }
   #vacancies h3 {
   font-size: 20px; /* Ajusta el tamaño del título */
   margin-bottom:20px; /* Espaciado debajo del título */
   text-align: center;
   letter-spacing: 1px; /* Espaciado entre letras */
-}
-}
-  
+}}
 /* -------------------------------------------------------------------------------------- */
 /*                       Sección "Video Abstracts" (versión PC)                            */
 /* -------------------------------------------------------------------------------------- */
 #abstracts {
+  padding: 100px 0 50px 0;
   max-width: 900px;
   margin: 0 auto;
   width: 80%; 
@@ -440,7 +419,7 @@ section {
 /* -------------------------------------------------------------------------------------- */
 #contact {
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 100px 0 50px 0;
   background-color: #fff;
   border-radius: 5px;
   max-width: 80%; /* Ancho adecuado en pantallas grandes */
@@ -454,7 +433,7 @@ section {
 .contact-image {
   display: block; /* Asegura que cada imagen esté en una línea separada */
   margin: 10px 0; /* Añade espacio vertical entre las imágenes */
-  max-width: 45%; /* Escala la imagen para ajustarse al contenedor si es necesario */
+  max-width: 50%; /* Escala la imagen para ajustarse al contenedor si es necesario */
   height: auto; /* Mantiene las proporciones originales de la imagen */
 }
 .contact-info {
@@ -486,13 +465,10 @@ section {
   }
   h5 {
     font-size: 16px; /* Ajuste de tamaño de fuente para títulos en móvil */
+    line-height: 1;
   }
   .contact-image1{
     max-width: 55%;
-  }
-  p {
-    font-size: 12px; /* Ajuste del tamaño de texto de los párrafos */
-    line-height: 1; /* Mejora la legibilidad */
   }
  .contact-image {
     max-width: 90%; /* Ajusta el ancho de las imágenes para pantallas pequeñas */
@@ -553,8 +529,7 @@ section {
   }
   .menu-trigger {
     display: block;
-  }
-}
+  }}
 /* ---------------------------------------------------------------------------------------- */
 /*                      Estilo del Cambio de Idioma (PC y Móvil)                           */
 /* -------------------------------------------------------------------------------------- */
@@ -596,8 +571,7 @@ section {
 @media (min-width: 769px) {
   .language-switcher2 {
       display: none; /* Oculta el selector de idioma en pantallas grandes */
-  }
-}
+  }}
 /* ---------------------------------------------------------------------------------------- */
 /*                            Logos  (version paraa movil)                                 */
 /* -------------------------------------------------------------------------------------- */
@@ -625,9 +599,7 @@ section {
     max-width: 50px; /* El logo de la derecha será más pequeño */
     height: auto;
     margin-left: 40px; /* Espaciado entre los logos */
-  }
-}
- 
+  }}
 /* -------------------------------------------------------------------------------------- */
 /*                     Footer (versión PC )                             */
 /* -------------------------------------------------------------------------------------- */
