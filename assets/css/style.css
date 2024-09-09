@@ -165,14 +165,34 @@ section {
 /*                              Sección "About" (versión PC)                               */
 /* -------------------------------------------------------------------------------------- */
 #about {
-  padding: 80px 30px;  /* Ajustar el padding para que no sea tan grande */
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 100px 30px;  /* Ajustar el padding para que no sea tan grande */
+  max-width: 1200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
+@media (min-width: 1024px) {
+  #about {
+    margin: 10%;
+    width: 80%; 
+  }
+#about .right-content {
+  flex: 0 0 90%;  
+  max-width: 90%;
+  padding-right: 25px;
+}
+#about .left-content {
+    flex-basis: 30%;  /* Ajustar el ancho de la columna izquierda */
+    padding-right: 20px;  /* Añadir un poco de espacio a la derecha para que no se pegue a la columna derecha */
+  }
+.education-section ul, .interests-section ul {
+  list-style-type: none;   /* Eliminar viñetas */
+  margin: 0;               /* Eliminar márgenes predeterminados */
+  text-align: justify;
+  padding-left: 1px;
+      /* Añadir relleno a la izquierda para mover más a la izquierda */
+}}
 #about .img-circle1 {
   width: 100%;
   max-width: 200px; /* Limitar el ancho máximo de la imagen */
@@ -194,78 +214,63 @@ section {
   color: #029b75e5;
   margin-bottom: 15px;
 }
-.education-section ul, .interests-section ul {
-  list-style-type: none;   /* Eliminar viñetas */
-  margin: 0;               /* Eliminar márgenes predeterminados */
-  padding: 0;
-  text-align: justify;
-  padding-left: 20px;      /* Añadir relleno a la izquierda para mover más a la izquierda */
-}
 .education-section ul li, .interests-section ul li {
   margin-bottom: 10px;
   line-height: 1.4;        /* Mejora la legibilidad con una mayor altura de línea */
   font-size: 14px;         /* Tamaño de la fuente */
   color: #171717;          /* Color del texto */
-  text-align: left;        /* Asegurar alineación del texto a la izquierda */
+  text-align: justify;        /* Asegurar alineación del texto a la izquierda */
 }
 /* -------------------------------------------------------------------------------------- */
 /*                              Sección "About" (versión Móvil)                           */
 /* -------------------------------------------------------------------------------------- */
 @media (max-width: 768px) {
-  /* Cambiar la disposición a columna */
   .row {
-    display: flex; /* Añadir display flex si no lo tiene */
+    align-items: center;
+    justify-content: center;
     flex-direction: column; /* Ordenar verticalmente */
   }
-
-  /* Ordenar los elementos para que la foto y los iconos aparezcan primero */
   .left-content {
     order: 1;
     text-align: center;
     margin-bottom: 20px;
   }
-
-  /* Foto de perfil primero */
   .img-circle1 {
     max-width: 150px;
     margin: 0 auto 20px auto;
     border-radius: 50%;
   }
-
-  /* Iconos sociales después de la foto */
   .social-icons {
     order: 2;
     margin-top: 10px;
     text-align: center;
   }
-
-  /* Texto "About" después de los iconos sociales */
   .right-content {
     order: 3;
     margin-top: 20px;
     text-align: center;
-    width: 100%; /* Asegura que ocupe todo el ancho en móvil */
   }
-
-  /* Educación debe aparecer al final en móviles */
   .education-section {
     order: 4;
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    width: 100%;
     margin-top: 20px;
     text-align: justify;
-  }
-}
-
+  }}
 /* -------------------------------------------------------------------------------------- */
 /*                           Sección "Lab Members" (versión PC)                            */
 /* -------------------------------------------------------------------------------------- */
 #group-members {
-  margin: 0 auto; /* Centra la sección en la página */
+  margin: 0 auto;
   padding: 100px 0; /* Ajusta el padding para el contenido */
   width: 70%; /* Ajusta el ancho según sea necesario */
   max-width: 1400px; 
   text-align: center;
 }
+@media (min-width: 1024px) {
+  #group-members {
+    margin: 10%;
+    width: 80%; 
+  }}
 #group-members {
   font-size: 16px;
   max-width: 1000px;
@@ -312,11 +317,15 @@ section {
 #publications {
   margin: 0 auto; /* Centra la sección en la página */
   padding: 100px 0; /* Ajusta el padding para el contenido */
-  width: 50%; /* Ajusta el ancho según sea necesario */
   max-width: 1000px; 
   margin-left: 20%;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  #publications {
+    margin: 12%;
+    width: 62%; 
+  }}
 .publication-list li {
   margin-bottom: 30px;
   padding-bottom: 20px;
@@ -356,10 +365,14 @@ section {
 #vacancies {
   padding: 100px 0 50px 0;
   margin: 0 auto; /* Centra la sección en la página */
-  width: 50%; 
-  max-width: 1000px; 
+  max-width: 1500px; 
   text-align: center;
 }
+@media (min-width: 1024px) {
+  #vacancies {
+    margin: 10%;
+    width: 65%; 
+  }}
 #vacancies h3 {
   font-size: 28px; /* Ajusta el tamaño del título */
   margin-bottom: 20px; /* Espaciado debajo del título */
@@ -372,9 +385,7 @@ section {
 }
 #vacancies, #join-us {
   max-width: 1000px;
-  margin: 0 auto;
   padding: 60px 30px;
-  margin-left: 20%;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -398,10 +409,13 @@ section {
   padding: 100px 0 50px 0;
   max-width: 900px;
   margin: 0 auto;
-  width: 80%; 
-  margin-left: 15%;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  #abstracts {
+    margin: 15%;
+    width: 65%; 
+  }}
 .video-container iframe {
   width: 80%;
   height: 400px;
@@ -427,6 +441,11 @@ section {
   border-radius: 5px;
   max-width: 80%; /* Ancho adecuado en pantallas grandes */
 }
+@media (min-width: 1024px) {
+  #contact {
+    margin: 15%;
+    width: 65%; 
+  }}
 .contact-image1 {
   display: block;
   margin-right: 20px; /* Esto añade 20px de espacio a la derecha de la imagen */
@@ -647,3 +666,4 @@ footer .right-text-content ul li a {
 footer .right-text-content ul li a:hover {
   color: #2a2a2a;
 }
+
