@@ -175,7 +175,7 @@ section {
 @media (min-width: 1024px) {
   #about {
     margin: 10%;
-    width: 75%; 
+    width: 70%; 
   }
 #about .right-content {
   flex: 0 0 90%;  
@@ -323,8 +323,8 @@ section {
 }
 @media (min-width: 1024px) {
   #publications {
-    margin: 12%;
-    width: 62%; 
+    margin: 10%;
+    width: 70%; 
   }}
 .publication-list li {
   margin-bottom: 30px;
@@ -371,7 +371,7 @@ section {
 @media (min-width: 1024px) {
   #vacancies {
     margin: 10%;
-    width: 65%; 
+    width: 70%; 
   }}
 #vacancies h3 {
   font-size: 28px; /* Ajusta el tamaño del título */
