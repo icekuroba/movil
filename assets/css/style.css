@@ -214,6 +214,7 @@ section {
 @media (max-width: 768px) {
   /* Cambiar la disposición a columna */
   .row {
+    display: flex; /* Añadir display flex si no lo tiene */
     flex-direction: column; /* Ordenar verticalmente */
   }
 
@@ -243,16 +244,18 @@ section {
     order: 3;
     margin-top: 20px;
     text-align: center;
+    width: 100%; /* Asegura que ocupe todo el ancho en móvil */
   }
 
   /* Educación debe aparecer al final en móviles */
   .education-section {
     order: 4;
-    width: 100%;
+    width: 100%; /* Asegura que ocupe todo el ancho */
     margin-top: 20px;
     text-align: justify;
   }
 }
+
 /* -------------------------------------------------------------------------------------- */
 /*                           Sección "Lab Members" (versión PC)                            */
 /* -------------------------------------------------------------------------------------- */
