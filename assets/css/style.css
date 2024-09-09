@@ -175,7 +175,7 @@ section {
 @media (min-width: 1024px) {
   #about {
     margin: 10%;
-    width: 80%; 
+    width: 75%; 
   }
 #about .right-content {
   flex: 0 0 90%;  
