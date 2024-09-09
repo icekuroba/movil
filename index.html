@@ -49,8 +49,7 @@
             }
             .main-nav {
                 display: none; /* Ocultar menú de navegación en el encabezado en dispositivos móviles */
-            }
-        }
+            } }
     </style>
 </head>
 <body>
@@ -59,8 +58,7 @@
 <div class="menu-trigger" onclick="toggleSidebar()">☰</div> <!-- Cambio de idioma debajo del botón de hamburguesa -->
 <div class="language-switcher2">
     <a href="index.html" class="active">ENG</a> |
-    <a href="index_es.html">ESP</a>
-</div>
+    <a href="index_es.html">ESP</a></div>
 <header class="header-area header-sticky">
     <div class="container">
         <nav class="main-nav">
@@ -73,13 +71,11 @@
                 <li><a href="#contact" onclick="closeSidebar()">Contact</a></li>
                 <li class="language-switcher">
                     <a href="index.html" class="active">ENG</a> |
-                    <a href="index_es.html">ESP</a>
-                </li>
+                    <a href="index_es.html">ESP</a></li>
                 <li class="logos">
                     <img src="assets/images/INB.png" alt="UNAM" style="margin-right: 10px;">
                     <img src="assets/images/imagen.jpg" alt="INB" style="margin-left: 10px;">
-                </li>
-            </ul>
+                </li></ul>
         </div>
     </nav>
 </div>
@@ -95,10 +91,8 @@
         </form>
     </div>
     <div class="widget">
-        <h4 class="widget-title">External Links</h4>
-        <ul>
-            <li><a href="http://www.maestria.inb.unam.mx/" target="_blank">UNAM Master's in Sciences</a></li>
-         </ul>
+        <h4 class="widget-title">External Links</h4><ul>
+            <li><a href="http://www.maestria.inb.unam.mx/" target="_blank">UNAM Master's in Sciences</a></li></ul>
     </div>
 
 <!-- *******************                                   Navegacion                   ***************** -->
@@ -114,10 +108,8 @@
             <li><a href="#abstracts" onclick="closeSidebar()">Video abstracts</a></li>
             <li><a href="#contact" onclick="closeSidebar()">Contacts</a></li> 
         </ul>
-    </div>
-</div>
-<div class="main-content">
-</div>
+    </div></div>
+<div class="main-content"></div>
 <script>
     function toggleSidebar() {  // Función para abrir/cerrar el menú lateral en móviles
             document.querySelector('.sidebar').classList.toggle('open');
@@ -136,8 +128,7 @@
     <div class="logos"> <!-- Solo visibles en móviles -->
         <img src="assets/images/INB.png" alt="INB" class="logo">
         <img src="assets/images/imagen.jpg" alt="UNAM" class="logo">
-    </div>
-</div>
+    </div></div>
     <section class="section" id="home">
         <div class="container">
             <div class="row">
@@ -153,62 +144,64 @@
 <!-- *********************                                              About                            ********************* -->
 <section class="section" id="about">
     <div class="container">
-        <div class="row"><!-- Contenido derecho para imagen e iconos sociales -->
-            <div class="col-lg-4 col-md-4 col-xs-4 text-center">
-                <div class="right-content">
-                    <div class="thumb">
-                        <img src="assets/images/perfil.jpg" alt="Stéphanie C. Thébault" class="img-circle1">
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://orcid.org/0000-0003-3233-282X" target="_blank"><i class="fa fa-orcid"></i></a>
-                        <a href="https://www.linkedin.com/in/st%C3%A9phanie-thebault-30485944/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=stephanie+thebault" target="_blank"><i class="fa fa-google"></i></a>
-                        <a href="https://twitter.com/SaludVisualUNAM" target="_blank" style="font-size: 16px; text-decoration: none;">𝕏</a>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-xs-12 text-center">
+          <div class="left-content">
+            <div class="thumb">
+              <img src="assets/images/perfil.jpg" alt="Profile Image" class="img-circle1">
             </div>
-            <div class="col-lg-7 col-md-7 col-xs-12">
-                <div class="left-text-content">
-                    <div class="section-heading">
-                        <h6>About</h6>
-                    </div>
-                    <p>I am a researcher primarily interested in seeking human health. </p>
-                    <p>I joined the <a href="https://inb.unam.mx/" target="_blank">Institute of Neurobiology</a> from the <a href="https://www.unam.mx/" target="_blank">National Autonomous University of Mexico</a> in 2007, and started the Translational Research Laboratory in Visual Health in 2021. Over time, thanks to the hard work of our entire team, we introduced a new modality for the non-invasive electroretinogram (ERG) technique to record the basal or resting electrical activity of the retina and use this signal for the timely diagnosis of sight-threatening retinopathies, like diabetic retinopathy and diabetic macular edema, and to test new treatments for retinitis pigmentosa.</p>
-                    <div id="moreText" style="display: none;">
-                        <p>Our experimental approach is interdisciplinary: we combine physiological, pharmacological, psychophysical, and bioinformatics approaches to understand the function of retinal circuits in resting conditions. We use molecular techniques to genetically target specific molecules in the retinal network. We juggle between experimental models and human studies, depending on the questions we have to solve. In particular, we collaborate with local clinicians at <a href="https://imoiap.com.mx/" target="_blank">IMO</a>, with optometrists in <a href="https://enes.unam.mx/udv.html" target="_blank">Mexico and Canada</a>, <a href="https://recherche.umontreal.ca/english/our-researchers/professors-directory/researcher/is/in19692/" target="_blank">vision scientists</a>, and <a href="https://www.institut-vision.org/chercheurs/serge-picaud" target="_blank">psychiatrists in France</a>.</p>
-                        </div>
-                    <!-- Enlace para mostrar más texto -->
-                    <a href="javascript:void(0);" onclick="toggleText()" id="readMoreLink">Read more</a>
-                </div>
+            <!-- Iconos sociales -->
+            <div class="social-icons">
+              <a href="https://orcid.org/0000-0003-3233-282X" target="_blank"><i class="fa fa-orcid"></i></a>
+              <a href="https://www.linkedin.com/in/st%C3%A9phanie-thebault-30485944/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=stephanie+thebault" target="_blank"><i class="fa fa-google"></i></a>
+              <a href="https://twitter.com/SaludVisualUNAM" target="_blank" style="font-size: 16px; text-decoration: none;">𝕏</a>
             </div>
-            <script>
-                function toggleText() {
-                    var moreText = document.getElementById("moreText");
-                    var readMoreLink = document.getElementById("readMoreLink");
-                    if (moreText.style.display === "none") {
-                        moreText.style.display = "block";
-                        readMoreLink.innerHTML = "Read less";
-                    } else {
-                        moreText.style.display = "none";
-                        readMoreLink.innerHTML = "Leer más";
-                    }}
-            </script>           
-            <div class="col-lg-6 col-md-6"><!-- Sección de Intereses y Educación -->
-                <div class="education-section">
-                    <h6>Education</h6>
-                    <ul>
-                        <li><strong>Postdoc in electrophysiology related to molecular mechanisms of renal diseases</strong>, 2005-2007, Nijmegen Centre for Molecular Life Sciences (NCMLS), The Netherlands. EMBO fellow.</li>
-                    </ul>
-                    <br>
-                    <br>
-                </div>
+            <!-- Sección de Educación -->
+            <div class="education-section">
+              <h6>Education</h6>
+              <ul>
+                <li><strong>Postdoc in electrophysiology related to molecular mechanisms of renal diseases</strong>, 2005-2007, Nijmegen Centre for Molecular Life Sciences (NCMLS), The Netherlands. EMBO fellow.</li>
+                <li><strong>PhD in Life and Health Sciences</strong>, 2001-2004, University of Lille I, France.</li>
+                <li><strong>Master degree in Life and Health Sciences</strong>, 2000-2001, University of Lille I, France.</li>
+                <li><strong>Bachelor of Science in Physiology</strong>, 1995-2000, University of Lille I, France.</li>
+              </ul>
             </div>
+          </div>
         </div>
+        <div class="col-lg-7 col-md-7 col-xs-12">
+          <div class="right-content">
+            <div class="section-heading">
+              <h6>About</h6>
+            </div>
+            <p>I am a researcher primarily interested in seeking human health. For this reason, I have dedicated myself to generating basic knowledge from molecular medicine research and to transferring this knowledge to clinical application...</p>
+            <p>I joined the <a href="https://inb.unam.mx/" target="_blank">Institute of Neurobiology</a> from the <a href="https://www.unam.mx/" target="_blank">National Autonomous University of Mexico</a> in 2007, and started the Translational Research Laboratory in Visual Health in 2021...</p>
+            <div id="moreText" style="display: none;">
+              <p>Our experimental approach is interdisciplinary: we combine physiological, pharmacological, psychophysical, and bioinformatics approaches to understand the function of retinal circuits...</p>
+              <p>Currently, we are focusing on the use of basal ERG signals for renal and brain diseases, and the introduction of microscopic imaging to in vivo ERG measurements...</p>
+            </div>
+            <!-- Enlace para mostrar/ocultar más texto -->
+            <a href="javascript:void(0);" onclick="toggleText()" id="readMoreLink">Read more</a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-
+  </section>
+  <!-- Script para mostrar/ocultar texto -->
+  <script>
+    function toggleText() {
+      var moreText = document.getElementById("moreText");
+      var readMoreLink = document.getElementById("readMoreLink");
+      if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        readMoreLink.innerHTML = "Read less";
+      } else {
+        moreText.style.display = "none";
+        readMoreLink.innerHTML = "Read more";
+      }  }
+  </script>
+  
 <!-- *******************                                   Miembros del grupo Section Starts                   ***************** -->
-<br>
 <section class="section" id="group-members">
     <div class="container">
         <div class="section-heading text-center">
@@ -269,8 +262,7 @@
         } else {
             moreGroupMembers.style.display = "none";
             toggleGroupLink.innerHTML = "Read more";
-        }
-    }
+        }}
 </script>
 <script>
     function toggleContent() {
@@ -282,8 +274,7 @@
         } else {
             moreContent.style.display = "none";
             toggleButton.textContent = "Read More";
-        }
-    }
+        } }
 </script>
 
 <!-- *******************                                     Sección de Publicaciones Comienza                   ***************** -->
@@ -292,7 +283,6 @@
         <div class="left-text-content"> 
         <div class="row"> 
             <div class="col-lg-12"> 
-                <br> <br> 
                 <div class="section-heading"> 
                     <h6>Scientific Publications Selection</h6> 
                     <h3>Artículos seleccionados en revistas (ordenados por año, del más reciente al más antiguo)</h3> 
@@ -310,10 +300,8 @@
 </section> 
  
 <!-- *******************                                     Join Us Section Starts                   ***************** -->
-
 <section class="section" id="vacancies">
     <div class="container">
-        <!-- Añadir el Diversity Statement -->
         <div class="section-heading">
             <h6>Join Us</h6> </div> <h3>Diversity Statement</h3> <p>Abrazamos la diversidad y nos comprometemos con la inclusión. Todos son bienvenidos aquí. ¡Únete a nuestro laboratorio y deja que tu singularidad brille!</p>
         <ul class="publication-list">
@@ -482,4 +470,5 @@
     });
 </script>
 </body>
+</html>
 </html>
